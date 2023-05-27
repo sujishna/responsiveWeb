@@ -1,0 +1,192 @@
+.header1{
+    display: flex;
+    width: 1300;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.hamburger{
+    display: flex;
+    display:none;
+
+}
+.nav-bar ul{
+    display: flex;
+    list-style-type: none
+}
+.nav-bar ul li a{
+    display: flex;
+    display: block;
+    color:whitesmoke;
+    font-size: 20px;
+    padding:10px 25px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 0 5px;
+    font-family: sans-serif;
+    text-decoration: none;
+    
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: white;
+}
+.nav-bar ul li a.active{
+    color: black;
+    background: white;
+}
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        display: flex;
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        display: flex;
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: black;
+        transition: 0.5s;
+        overflow:hidden;
+
+    }
+    .nav-bar.active{
+        display: flex;
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: flex;
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    
+    }
+}
+*{
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+/*photo and text */
+.h1{
+    padding-top: 70px;
+    padding-left: 10px;
+    color: #fff!important;
+}
+#bg{
+    height: 800px;
+    background: linear-gradient(rgb(0, 0, 0),rgb(63, 3, 3));
+}
+.para{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: whitesmoke;
+    font-size: 19px;
+}
+#hea{
+
+}
+
+
+
+
+
+/*photo and text*/
